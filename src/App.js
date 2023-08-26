@@ -3,7 +3,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 
 function App() {
-  const BASE_URL = 'http://192.168.1.13:5000'
+  const BASE_URL = 'http://192.168.1.3:5000'
   const [products, setProducts] = useState([]);
   const [modalOpen, setModalOpen] = useState(false);
   const [addModalOpen, setAddModalOpen] = useState(false);
