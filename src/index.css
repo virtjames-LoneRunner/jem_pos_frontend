@@ -1,3 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.product-item div {
+  pointer-events: none !important;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +18,38 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+div h2 {
+  @apply text-xs md:text-sm
+}
+
+input {
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-400 bg-blue-50
+}
+
+input:disabled {
+  @apply bg-gray-200
+}
+
+select {
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-400 bg-blue-50
+}
+
+.action-toggle button {
+  @apply bg-gray-300 text-gray-600 px-3 py-2 rounded-md shadow-md
+}
+
+.action-toggle .active {
+  @apply bg-green-700 text-white
+}
+
+.add-product {
+  @apply bg-green-600 hover:bg-green-800 px-4 py-2 shadow-lg rounded-md text-white text-sm
+}
+.add-stock {
+  @apply bg-blue-500 hover:bg-blue-700
+}
+.trash-stock {
+  @apply bg-red-500 hover:bg-red-700
 }
